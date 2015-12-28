@@ -53,9 +53,9 @@ function validateSchema(addon) {
 
   if (validateResult.errors.length > 0) {
     const combinedErrors = validateResult.errors.reduce((prev, current) => {
-      prev.push(current.message);
+      return prev.concat([current.message]);
     }, []);
-    throw new Error(`Schema Validation Errors: ${combinedErrors.join(', ')}`);
+    throw new Error(`Schema Validation Errors:\n${combinedErrors.join('\n')}`);
   }
 
   return true;
