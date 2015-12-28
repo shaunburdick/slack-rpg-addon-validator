@@ -1,5 +1,5 @@
 # Slack RPG Official Add-on Validator
-This provides a validator class that can be used to validate an add-on.
+[![Build Status](https://travis-ci.org/shaunburdick/slack-rpg-addon-validator.svg)](https://travis-ci.org/shaunburdick/slack-rpg-addon-validator) This provides a validator class that can be used to validate an add-on.
 
 ## Example
 
