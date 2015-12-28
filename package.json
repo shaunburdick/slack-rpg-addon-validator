@@ -1,6 +1,6 @@
 {
   "name": "slack-rpg-addon-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official addons",
   "main": "validate.js",
   "scripts": {

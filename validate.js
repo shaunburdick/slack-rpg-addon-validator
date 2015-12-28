@@ -52,7 +52,7 @@ function validateSchema(addon) {
   let validateResult = v.validate(addon.data, schema[addon.type][addon.version]);
 
   if (validateResult.errors.length > 0) {
-    const combinedErrors = validateResult.error.reduce((prev, current) => {
+    const combinedErrors = validateResult.errors.reduce((prev, current) => {
       prev.push(current.message);
     }, []);
     throw new Error(`Schema Validation Errors: ${combinedErrors.join(', ')}`);
