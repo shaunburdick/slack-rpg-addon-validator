@@ -1,0 +1,27 @@
+{
+  "name": "slack-rpg-addon-validator",
+  "version": "1.0.0",
+  "description": "Official addons",
+  "main": "validate.js",
+  "scripts": {
+    "test": "npm run validate",
+    "validate": "faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shaunburdick/slack-rpg-addon-validator.git"
+  },
+  "author": "Shaun Burdick <github@shaunburdick.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaunburdick/slack-rpg-addon-validator/issues"
+  },
+  "homepage": "https://github.com/shaunburdick/slack-rpg-addon-validator#readme",
+  "dependencies": {
+    "jsonschema": "^1.0.2"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.4.0"
+  }
+}
