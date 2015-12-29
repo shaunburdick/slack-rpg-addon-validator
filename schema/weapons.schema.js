@@ -24,11 +24,11 @@ module.exports = {
             properties: {
               attack: {
                 type: 'array',
-                items: { type: 'string' }
+                items: { type: 'string', minLength: 1, maxLength: 20 }
               },
               break: {
                 type: 'array',
-                items: { type: 'string' }
+                items: { type: 'string', minLength: 1, maxLength: 20 }
               },
             },
             required: ['attack', 'break'],
@@ -39,14 +39,14 @@ module.exports = {
       weapons: {
         type: 'object',
         properties: {
-          id: { type: 'string' },
-          name: { type: 'string' },
-          type: { type: 'string' },
+          id: { type: 'string', minLength: 1 },
+          name: { type: 'string', minLength: 1, maxLength: 40 },
+          type: { type: 'string', minLength: 1 },
           hands: { enum: [1,2] },
-          damage: { type: 'string' },
-          rarity: { type: 'integer' },
-          fragility: { type: 'integer' },
-          wear: { type: 'integer' }
+          damage: { type: 'string', pattern: '^(\\d+)d(\\d+)([\\+\\-]\\d+)?$' },
+          rarity: { type: 'integer', minimum: 1 },
+          fragility: { type: 'integer', minimum: 1 },
+          wear: { type: 'integer', minimum: 1 }
         },
         required: ['id', 'name', 'type', 'hands', 'damage', 'rarity', 'fragility', 'wear'],
         additionalProperties: false,
