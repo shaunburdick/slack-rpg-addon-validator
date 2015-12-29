@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/shaunburdick/slack-rpg-addon-validator.git"
+    "url": "git+ssh://git@github.com/slack-rpg/addon-validator.git"
   },
   "author": "Shaun Burdick <github@shaunburdick.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shaunburdick/slack-rpg-addon-validator/issues"
+    "url": "https://github.com/slack-rpg/addon-validator/issues"
   },
-  "homepage": "https://github.com/shaunburdick/slack-rpg-addon-validator#readme",
+  "homepage": "https://github.com/slack-rpg/addon-validator#readme",
   "dependencies": {
     "jsonschema": "^1.0.2"
   },
