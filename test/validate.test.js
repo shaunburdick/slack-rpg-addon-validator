@@ -62,8 +62,8 @@ test('Validate Inner Schema', (assert) => {
   );
 
   assert.throws(
-    Validate.validateSchema.bind(null, {type: 'locations', version: 'v1', data: {}}),
-    /./,
+    Validate.validateSchema.bind(null, {type: 'locations', version: 'v1', data: { foo: 'bar' }}),
+    /Schema Validation Errors/,
     'Throw error if JSON Schema fails to validate'
   );
 
