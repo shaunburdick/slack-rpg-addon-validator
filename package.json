@@ -5,7 +5,9 @@
   "main": "validate.js",
   "scripts": {
     "test": "npm run validate",
-    "validate": "faucet"
+    "validate": "faucet",
+    "coverage": "istanbul cover --include-all-sources tape test/*.test.js",
+    "travis": "npm run coverage && cat ./coverage/lcov.info | coveralls --verbose"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,9 @@
     "jsonschema": "^1.0.2"
   },
   "devDependencies": {
+    "coveralls": "^2.11.6",
     "faucet": "0.0.1",
+    "istanbul": "^0.4.1",
     "tape": "^4.4.0"
   }
 }
