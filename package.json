@@ -7,7 +7,8 @@
     "test": "npm run validate",
     "validate": "faucet",
     "coverage": "istanbul cover --include-all-sources tape test/*.test.js",
-    "travis": "npm run coverage && cat ./coverage/lcov.info | coveralls --verbose"
+    "coveralls": "cat ./coverage/lcov.info | coveralls --verbose",
+    "travis": "npm run coverage && npm run coveralls"
   },
   "repository": {
     "type": "git",
