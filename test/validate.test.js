@@ -9,6 +9,8 @@ const sample = {
   monsters: fs.readFileSync(process.env.PWD + '/sample/monsters.json').toString(),
   names: fs.readFileSync(process.env.PWD + '/sample/names.json').toString(),
   weapons: fs.readFileSync(process.env.PWD + '/sample/weapons.json').toString(),
+  classes: fs.readFileSync(process.env.PWD + '/sample/classes.json').toString(),
+  races: fs.readFileSync(process.env.PWD + '/sample/races.json').toString(),
 };
 
 test('Validate Outer format', (assert) => {

@@ -1,0 +1,14 @@
+{
+  "type": "classes",
+  "version": "v1",
+  "data": {
+    "classes": [
+      {
+        "id": "ranger",
+        "name": "Ranger",
+        "description": "They smell odd but seem to always find me",
+        "importantStat": "speed"
+      }
+    ]
+  }
+}

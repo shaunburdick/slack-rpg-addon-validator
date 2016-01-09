@@ -1,0 +1,19 @@
+{
+  "type": "races",
+  "version": "v1",
+  "data": {
+    "races": [
+      {
+        "id": "human",
+        "name": "Human",
+        "description": "If you're reading this and are not human, well done!",
+        "statBonuses": {
+          "muscle": 0,
+          "speed": 0,
+          "smarts": 1,
+          "charm": 1
+        }
+      }
+    ]
+  }
+}

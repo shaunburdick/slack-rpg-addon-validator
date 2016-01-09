@@ -18,7 +18,7 @@ module.exports = {
       types: {
         type: 'object',
         properties: {
-          id: { type: 'string' },
+          id: { type: 'string', minLength: 1 },
           phrases: {
             type: 'object',
             properties: {
@@ -35,6 +35,7 @@ module.exports = {
             additionalProperties: false,
           },
         },
+        required: ['id', 'phrases'],
       },
       weapons: {
         type: 'object',

@@ -7,6 +7,8 @@ const schema = {
   weapons: require('./schema/weapons.schema'),
   locations: require('./schema/locations.schema'),
   monsters: require('./schema/monsters.schema'),
+  classes: require('./schema/classes.schema'),
+  races: require('./schema/races.schema'),
 };
 
 /**
