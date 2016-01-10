@@ -12,6 +12,7 @@ module.exports = {
             name: { type: 'string', minLength: 1, maxLength: 40 },
             difficulty: { type: 'integer', minimum: 1, maximum: 20 },
             experience: { type: 'integer', minimum: 1 },
+            hitbonus: { type: 'integer', minimum: -20 },
             hitpoints: { type: 'string', pattern: '^(\\d+)d(\\d+)([\\+\\-]\\d+)?$' },
             damage: { type: 'string', pattern: '^(\\d+)d(\\d+)([\\+\\-]\\d+)?$' },
             attacks: {
@@ -20,7 +21,7 @@ module.exports = {
             },
           },
           additionalProperties: false,
-          required: ['id', 'name', 'difficulty', 'experience', 'hitpoints', 'damage'],
+          required: ['id', 'name', 'difficulty', 'experience', 'hitpoints', 'damage', 'hitbonus'],
         },
       },
     },

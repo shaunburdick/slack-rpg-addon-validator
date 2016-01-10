@@ -8,6 +8,7 @@
         "name": "Skeleton",
         "difficulty": 10,
         "experience": 10,
+        "hitbonus": 0,
         "hitpoints": "2d6",
         "damage": "1d4",
         "attacks": ["swipe", "slap", "punch"]
